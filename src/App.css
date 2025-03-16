@@ -1,0 +1,433 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #45151B; /* Light yellow */
+    color: #FBDE9C;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Header and Navigation */
+header {
+    background-color: #1e3a8a; /* Dark blue */
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5em;
+}
+
+nav {
+    text-align: center;
+    margin: 20px 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #f99256;
+    margin: 0 15px;
+    font-weight: bold;
+    padding: 8px;
+    width: 100%;
+    text-align: left;
+}
+
+nav a:hover {
+    color: #2563eb; /* Lighter blue */
+}
+
+/* Dashboard */
+.dashboard {
+    color:#C74E51;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.dashboard-card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.dashboard .card h2 {
+    color: #1e3a8a;
+}
+
+.dashboard .card .value {
+    font-size: 2em;
+    font-weight: bold;
+    color: #4b5563;
+}
+
+/* Landing Page */
+.landing {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    background: url('./assets/images/fooddiarylanding.jpg') no-repeat center center/cover;
+    color: #45151B;
+    text-align: end;
+    padding: 0 20px;
+}
+
+.landing h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.landing p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    text-align: right;
+}
+
+.landing button {
+    background-color: #1e3a8a;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-size: 1.1em;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.landing button:hover {
+    background-color: #2563eb;
+}
+
+/* Forms */
+form {
+    background-color: #EA9DAE;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+    padding: 15px;
+}
+
+form h2 {
+    color: #FBDE9C;
+    margin-bottom: 20px;
+}
+
+form input, form select, form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+form input[type="submit"] {
+    background-color: #1e3a8a;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+form input[type="submit"]:hover {
+    background-color: #2563eb;
+}
+
+/* Specific Forms Styles */
+
+/* Food Diary */
+.food-diary .date-picker {
+    margin-bottom: 20px;
+}
+
+.food-diary .food-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.food-diary .food-item {
+    background-color: #f9fafb;
+    padding: 15px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.food-diary .food-item .food-name {
+    font-weight: bold;
+    color: #1e3a8a;
+}
+
+.food-diary .food-item .food-calories {
+    color: #4b5563;
+}
+
+/* Food Item */
+.food-item {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.food-item input {
+    width: 80%;
+    margin: auto;
+}
+
+.food-item select {
+    width: 80%;
+    margin: auto;
+}
+/* Container for the entire food diary page */
+.food-diary {
+    background-color: #f4f4f9;  /* Light gray background */
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    color: #333;
+}
+
+/* Individual Food Diary Entry Card */
+.food-entry {
+    background-color: #C74E51;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Food Diary Entry Title */
+.food-entry h3 {
+    color: #1e3a8a;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+/* Food Diary Entry Content (Text) */
+.food-entry p {
+    font-size: 1.1em;
+    margin: 5px 0;
+    line-height: 1.6;
+}
+
+/* Buttons inside Food Diary */
+.food-entry button {
+    margin: 10px 5px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+/* Delete Button Styling */
+.food-entry button[style] {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+}
+
+.food-entry button:hover {
+    opacity: 0.8;
+}
+
+/* Food Item Cards inside a Meal */
+.food-item {
+    background-color: #f9fafb;
+    padding: 15px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Food Item Title */
+.food-item h4 {
+    color: #2563eb;
+    font-size: 1.2em;
+}
+
+/* Food Item Details */
+.food-item p {
+    font-size: 1em;
+    color: #666;
+}
+
+/* Meal Type Title */
+.food-entry .meal-type {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-top: 20px;
+}
+
+/* Add Food Item Button in Food Diary */
+.food-entry button.add-food-item {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+}
+
+/* Edit Button in Food Diary */
+.food-entry button.edit {
+    background-color: #ff9800;
+    color: white;
+    border: none;
+}
+
+/* Nutrition Goals */
+.nutrition-goals .goal-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.nutrition-goals .goal-card h3 {
+    color: #1e3a8a;
+}
+
+.nutrition-goals .goal-card .value {
+    font-size: 1.5em;
+    color: #2563eb;
+}
+
+.nutrition-goals .goal-card input {
+    margin-top: 10px;
+}
+
+/* Weight Tracking */
+.weight-tracking {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Card container for weight tracking information */
+  .weight-tracking .card-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+  }
+
+  /* Card content styling */
+.weight-tracking .card-content {
+    width: 100%;
+    padding: 20px;
+  }
+  
+  .weight-tracking .card-header {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  .weight-tracking .card-item {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .weight-tracking .card-item p {
+    margin: 0;
+    color: #777;
+  }
+  
+  .weight-tracking .card-footer {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  /* Add some responsiveness for smaller screens */
+  @media (max-width: 768px) {
+    .weight-tracking .card-container {
+      padding: 15px;
+    }
+  
+    .weight-tracking .card-header {
+      font-size: 1.2rem;
+    }
+  
+    .weight-tracking .card-item {
+      font-size: 0.9rem;
+    }
+  }
+
+
+/* Reminders */
+.reminders {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 15px;
+}
+
+.reminders .reminder-item {
+    background-color: #C74E51;
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+    margin: 30px auto;
+}
+
+.reminders .reminder-item .reminder-time {
+    color: #4b5563;
+    
+}
+
+.reminders .reminder-item .reminder-text {
+    font-weight: bold;
+    color: #1e3a8a;
+}
+
+.reminders button {
+    background-color: #ff4b5c;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.reminders button:hover {
+    background-color: #ff2f47;
+}
+
+/* Media Queries */
+
+/* For Tablets (max-width: 768px) */
+@media (max-width: 768px) {
+    /* Stack navigation links */
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+}
+
+ /* Stack the main content layout (food diary + sidebar) vertically */
+ .main-content {
+    flex-direction: column;
+}

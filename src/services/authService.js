@@ -35,6 +35,7 @@ const signIn = async (formData) => {
     });
 
     const data = await res.json();
+    console.log(data, "data");
 
     if (data.err) {
       throw new Error(data.err);
@@ -44,7 +45,7 @@ const signIn = async (formData) => {
       localStorage.setItem('token', data.token);
       return JSON.parse(atob(data.token.split('.')[1])).payload;
     }
-
+    console.log(data.token, "data.token");
     throw new Error('Invalid response from server');
   } catch (err) {
     console.log(err);

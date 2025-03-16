@@ -1,8 +1,10 @@
 const Landing = () => {
   return (
     <main>
-      <h1>Hello, you are on the landing page for visitors.</h1>
-      <p>Sign up now, or sign in to see your super secret dashboard!</p>
+      <div className= "landing">
+      <h1>Welcome to the Food Diary App.</h1>
+      <p>Track your food, weight,and nutrition goals easily?</p>
+      </div>
     </main>
   );
 };
