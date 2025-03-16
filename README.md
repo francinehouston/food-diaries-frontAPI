@@ -9,7 +9,8 @@
 
 Depolyed links:
 
-front End:[![Netlify Status](https://api.netlify.com/api/v1/badges/974df0db-ec3b-435a-9f3c-ea15a188dbdc/deploy-status)](https://app.netlify.com/sites/euphonious-brigadeiros-a25e08/deploys)
+front End:https://food-diary-api-app.netlify.app/
+
 
 Back end:https://git.heroku.com/food-diary-app.git
 
