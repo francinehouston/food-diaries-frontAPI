@@ -10,58 +10,6 @@ const NutritionGoalsForm = ({ onNewNutritionGoal }) => {
   const [submittedGoal, setSubmittedGoal] = useState(null);
 
 
-
-
-
-  // const handleSubmit = async (e) => {
-  //   e.preventDefault();
-
-  //   const token = localStorage.getItem("token");
-
-  //   const newGoal = {
-  //     daily_calories_target: dailyCalories,
-  //     protein_target: protein,
-  //     carbs_target: carbs,
-  //     fats_target: fats,
-  //     water_intake_target: waterIntake,
-  //   };
-
-
-
-  //   try {
-  //     const response = await fetch("http://localhost:8000/nutrition-goals", {
-  //       method: "POST",
-  //       headers: {
-  //         "Content-Type": "application/json", // Specify that we're sending JSON
-  //         'Authorization': `Bearer ${token}`,
-  //       },
-  //       body: JSON.stringify(newGoal), // Convert the newGoal object to JSON string
-  //     });
-
-  //     if (!response.ok) {
-  //       throw new Error(`Error: ${response.status}`);
-  //     }
-
-  //     const data = await response.json(); // Parse the JSON response
-  //     // console.log("Fetched data:", data);
-  //     console.log("Nutrition goal set:", data);
-
-
-
-
-
-  //     // Optionally clear the form after submitting
-  //     setDailyCalories("");
-  //     setProtein("");
-  //     setCarbs("");
-  //     setFats("");
-  //     setWaterIntake("");
-  //     onNewNutritionGoal(data);
-  //   } catch (error) {
-  //     console.error("Error setting nutrition goal:", error);
-  //   }
-  // };
-
   const handleSubmit = async (e) => {
     e.preventDefault();
     const token = localStorage.getItem("token");

@@ -1,5 +1,5 @@
 # Food Diary App
-
+ ![Food Diary Logo](FoodDiarylogo.png)
 
 ## About
 
@@ -7,14 +7,28 @@
 
 ## Getting started
 
-Fork and clone this repository to your local machine.
+Depolyed links:
+front End:
+Back end:
 
-After moving into the cloned directory, run `npm i` to download the dependencies.
+trello board link:https://trello.com/b/Qhadbsu5/food-diary-full-stack-mern-app
 
-Create a `.env` file in the root of the project and add the following:
+## Attributions
+YouTube
+ChaptGPT 
+projects in class, Hoot Front and Back End, Pets front and Back end
+JWT Authorization
 
-```plaintext
-VITE_BACK_END_SERVER_URL=http://localhost:8000
-```
+## Technologies used
+HTML
+CSS
+Javscript
+React
+MongoDB
+Node js
 
-Start the app with `npm run dev`.
+## Next Steps
+learn React Material UI, css modules, and styled components
+add upload and display images with cloudinary
+
+

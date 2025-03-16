@@ -22,20 +22,6 @@ const Dashboard = () => {
 
   return (
     <>
-    {/* <main>
-      <h1>Welcome, {user.username}</h1>
-      <div className='dashboard'>
-      <h1>Dashboard</h1>
-      </div>
-      <p>
-        This is the dashboard page where you can see a list of all the users.
-      </p>
-      <ul>
-        {users.map(user => (
-          <li key={user._id}>{user.username}</li>
-        ))}
-      </ul>
-    </main> */}
     <main>
      <h1>Welcome, {user.username}</h1>
       <div className="dashboard">

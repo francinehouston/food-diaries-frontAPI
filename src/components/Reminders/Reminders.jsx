@@ -39,13 +39,6 @@ const Reminders = () => {
           throw new Error(`Error fetching reminders: ${response.status}`);
         }
 
-    //     const data = await response.json();
-    //     setReminders(data);
-    //   } catch (error) {
-    //     console.error("Error fetching reminders:", error);
-    //     setError("Failed to load reminders.");
-    //   }
-    // };
     const data = await response.json();
     setReminders(data);
   } catch (err) {
