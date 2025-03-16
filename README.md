@@ -1,5 +1,5 @@
 # Food Diary App
- ![Food Diary Logo](FoodDiarylogo.png)
+ ![Food Diary Logo](/assets/images/FoodDiarylogo.png)
 
 ## About
 
