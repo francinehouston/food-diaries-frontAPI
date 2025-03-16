@@ -1,8 +1,9 @@
-# React JWT Auth Template
+# Food Diary App
+
 
 ## About
 
-This repo is a React JWT Auth template meant to be paired with a back-end app utilizing JWT tokens.
+
 
 ## Getting started
 
@@ -13,7 +14,7 @@ After moving into the cloned directory, run `npm i` to download the dependencies
 Create a `.env` file in the root of the project and add the following:
 
 ```plaintext
-VITE_BACK_END_SERVER_URL=http://localhost:3000
+VITE_BACK_END_SERVER_URL=http://localhost:8000
 ```
 
 Start the app with `npm run dev`.
