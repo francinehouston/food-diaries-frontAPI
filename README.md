@@ -1,5 +1,5 @@
 # Food Diary App
- ![Food Diary Logo](/assets/images/FoodDiarylogo.png)
+ ![Food Diary Logo](src/assets/images/FoodDiarylogo.png)
 
 ## About
 
@@ -8,8 +8,10 @@
 ## Getting started
 
 Depolyed links:
-front End:
-Back end:
+
+front End:[![Netlify Status](https://api.netlify.com/api/v1/badges/974df0db-ec3b-435a-9f3c-ea15a188dbdc/deploy-status)](https://app.netlify.com/sites/euphonious-brigadeiros-a25e08/deploys)
+
+Back end:https://git.heroku.com/food-diary-app.git
 
 trello board link:https://trello.com/b/Qhadbsu5/food-diary-full-stack-mern-app
 
