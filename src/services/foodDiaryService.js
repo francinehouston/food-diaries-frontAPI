@@ -3,7 +3,9 @@ const BASE_URL = `${import.meta.env.VITE_BACK_END_SERVER_URL}/food-diary`;
 // Fetch all entries
 const getAllEntries = async (token) => {
     const response = await fetch(BASE_URL, {
-        headers: { Authorization: `Bearer ${token}` },
+        headers: { Authorization: `Bearer ${token}`,
+    'Content-Type': 'application/json',
+    },
     });
 
     if (!response.ok) {

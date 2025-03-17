@@ -1,11 +1,14 @@
-const BASE_URL = `${import.meta.env.VITE_BACK_END_SERVER_URL}/auth`;
+const BASE_URL = import.meta.env.VITE_BACK_END_SERVER_URL;
+
 
 const signUp = async (formData) => {
   try {
     const res = await fetch(`${BASE_URL}/sign-up`, {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
+      headers: { 'Content-Type': 'application/json'},
       body: JSON.stringify(formData),
+      credentials: 'include'
+
     });
 
     const data = await res.json();
@@ -27,13 +30,14 @@ const signUp = async (formData) => {
 };
 
 const signIn = async (formData) => {
+
   try {
     const res = await fetch(`${BASE_URL}/sign-in`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(formData),
     });
-
+    console.log(res, "res");
     const data = await res.json();
     console.log(data, "data");
 
