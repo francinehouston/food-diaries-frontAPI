@@ -32,7 +32,7 @@ const signUp = async (formData) => {
 const signIn = async (formData) => {
 
   try {
-    const res = await fetch(`${BASE_URL}/auth/sign-in`, {
+    const res = await fetch(`${BASE_URL}/sign-in`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(formData),

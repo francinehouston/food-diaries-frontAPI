@@ -26,7 +26,7 @@ const handleSubmit = async (e) => {
           "Content-Type": "application/json",
           Authorization: `Bearer ${token}`, // Pass token for authorization
         },
-        body: JSON.stringify({ title, date }),
+        body: JSON.stringify({ weight, date }),
       });
 
       if (!response.ok) {

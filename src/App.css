@@ -26,8 +26,11 @@ header h1 {
 }
 
 nav {
-    text-align: center;
+    text-align: left;
+    justify-content: left;
+    display: flex;
     margin: 20px 0;
+    flex-direction: column;
 }
 
 nav a {

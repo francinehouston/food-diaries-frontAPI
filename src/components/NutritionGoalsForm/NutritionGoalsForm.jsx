@@ -41,23 +41,13 @@ const NutritionGoalsForm = ({ onNewNutritionGoal }) => {
       // console.log("Fetched data:", data);
       console.log("Nutrition goal set:", data);
 
-      //Prevent duplicate addition
-      if (data && onNewNutritionGoal) {
-        onNewNutritionGoal((prevGoals) => {
-          const exists = prevGoals.some(
-            (goal) => JSON.stringify(goal) === JSON.stringify(data)
-          );
-          return exists ? prevGoals : [...prevGoals, data];
-        });
-      }
-
       // Clear form fields
       setDailyCalories("");
       setProtein("");
       setCarbs("");
       setFats("");
       setWaterIntake("");
-
+      onNewNutritionGoal(data);
     } catch (error) {
       console.error("Error setting nutrition goal:", error);
     }

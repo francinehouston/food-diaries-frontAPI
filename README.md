@@ -2,7 +2,7 @@
  ![Food Diary Logo](src/assets/images/FoodDiarylogo.png)
 
 ## About
-
+I created a food diary app based off the information from FitBit. I also was inspired food diary mobile app from the App store that has a camera that can take photos of the food and add notes.
 
 
 ## Getting started
@@ -33,5 +33,5 @@ Node js
 ## Next Steps
 learn React Material UI, css modules, and styled components
 add upload and display images with cloudinary
-
+navgation bar across instead of in the center
 

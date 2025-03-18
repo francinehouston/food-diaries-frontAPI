@@ -30,8 +30,6 @@ const Dashboard = () => {
           <div key={user._id} className="dashboard-card">
             <h3>{user.username}</h3>
             <p>Email: {user.username}</p>
-            {/* <p>Joined: {new Date(user.createdAt).toLocaleDateString()}</p> */}
-            <p>Joined: {user?.createdAt ? new Date(user.createdAt).toLocaleString() : "Date not available"}</p>
           </div>
         ))}
       </div>
