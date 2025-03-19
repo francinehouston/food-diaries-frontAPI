@@ -2,7 +2,7 @@
  ![Food Diary Logo](src/assets/images/FoodDiarylogo.png)
 
 ## About
-I created a food diary app based off the information from FitBit. I also was inspired food diary mobile app from the App store that has a camera that can take photos of the food and add notes.
+I created a food diary app based off the information from FitBit. I also was inspired food diary mobile app from the App store that has a camera that can take photos of the food and add notes. Also I create this app, because I deal with an autoimmune disease called lupus. 
 
 
 ## Getting started
